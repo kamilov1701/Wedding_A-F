@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yusufboy & Lolaxon</title>
+  <link rel="icon" href="Ring.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- OG Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yusufboy & Lolaxon takifnoma">
+  <meta property="og:description" content="Sizni to'yimizga taklif qilamiz">
+  <meta property="og:url" content="https://yusufboy-lolaxon.vercel.app/">
+  <meta property="og:image" content="https://yusufboy-lolaxon.vercel.app/preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter / Telegram -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yusufboy & Lolaxon takifnoma">
+  <meta name="twitter:description" content="Sizni to'yimizga taklif qilamiz">
+  <meta name="twitter:image" content="https://yusufboy-lolaxon.vercel.app/preview.png">
+</head>
+
+<body>
+
+  <!-- YouTube hidden player -->
+  <div id="yt-player"></div>
+
+  <!-- ══════════════════════════════
+       COVER PAGE
+  ══════════════════════════════ -->
+  <div class="cover" id="coverPage">
+    <div class="cover-top"> <span>-</span> SIZGA TAKLIFNOMA KELDI <span>-</span></div>
+    <div class="cover-names">
+      Yusufboy <br> <span class="amp2">& <br> </span> Lolaxon
+    </div>
+    <div class="cover-date-row">
+      <div class="ln"></div>
+      <div class="cover-date-txt">28 · 06 · 2026</div>
+      <div class="ln"></div>
+    </div>
+    <div class="cover-arabic">وَأَلَّفَ بَيْنَ قُلُوبِهِمْ</div>
+    <div class="cover-translation">"U ularning qalblarini birlashtirdi"</div>
+    <div class="cover-surah">AL-ANFOL, 63</div>
+    <div class="heart-icon">♡</div>
+
+    <!-- Unlock slider -->
+    <div class="unlock-wrap" id="unlockWrap">
+      <div class="unlock-fill" id="unlockFill"></div>
+      <div class="unlock-track" id="unlockTrack">OCHISH</div>
+      <div class="unlock-arrow">
+        <i class="ti ti-chevrons-right" style="font-size:50px; color: #fff;"></i>
+      </div>
+      <div class="unlock-thumb" id="unlockThumb">
+        <i class="ti ti-lock" id="lockIcon"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+       MAIN PAGE
+  ══════════════════════════════ -->
+  <div class="main-page" id="mainPage">
+
+    <!-- Top bar: lang + music + theme -->
+    <div class="top-bar">
+      <div class="lang-group">
+        <button class="lang-btn active" data-lang="uz" onclick="setLang('uz')">UZ</button>
+        <button class="lang-btn" data-lang="ru" onclick="setLang('ru')">RU</button>
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+      </div>
+      <div class="right-controls">
+        <button class="icon-btn" onclick="toggleMusic()" title="Musiqa">
+          <i class="ti ti-player-play" id="musicIcon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Music status bar -->
+    <div class="music-bar">
+      <div class="music-wave" id="mwave">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div>
+        <div class="music-title">♪ Sevara Nazarxon — Meni Sev</div>
+        <div class="music-sub" id="music-status">BOSING — O'YNATING</div>
+      </div>
+    </div>
+
+    <!-- Hero section -->
+    <div class="hero">
+      <span class="ornament">✦ ✦ ✦</span>
+      <div class="names">
+        Yusufboy<br>
+        <span class="amp">&</span><br>
+        Lolaxon
+      </div>
+      <div class="divider-line">
+        <div class="divider-diamond"></div>
+      </div>
+      <div style="font-size:21px; color:var(--gold); font-weight:700; margin-top: 30px;" bis_skin_checked="1">
+        28 · 06 · 2026 &nbsp;·&nbsp; 20:00
+      </div>
+      <div class="arabic" style="margin-top: 21px;">وَأَلَّفَ بَيْنَ قُلُوبِهِمْ</div>
+      <div class="translation" id="quran-tr" style="margin-top: 21px;">«U ularning qalblarini birlashtirdi»</div>
+      <div class="surah">AL-ANFOL, 63</div>
+    </div>
+
+    <!-- Invite text -->
+    <div class="invite-text" id="invite-text">
+      Qadrli azizlarimiz! <br>
+      <span style="font-size: 90px;">Biz <br></span>
+      sizlarni to‘yimizga taklif
+      etishdan juda xursandmiz<br>
+    </div>
+
+    <!-- Date & Time cards
+    <div class="section">
+      <span class="section-label" id="lbl-details">TAFSILOTLAR</span>
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="ic-label" id="lbl-date">SANA</span>
+          <div class="ic-value">28.06</div>
+          <div class="ic-sub">2026</div>
+        </div>
+        <div class="info-card">
+          <span class="ic-label" id="lbl-time">VAQT</span>
+          <div class="ic-value">19:00</div>
+          <div class="ic-sub" id="lbl-evening">Kechki ziyofat</div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- Countdown -->
+    <!-- <div class="countdown-section">
+      <span class="countdown-label" id="cd-label">TO'YGACHA QOLGAN VAQT</span>
+      <div class="countdown-grid">
+        <div class="cd-block">
+          <span class="cd-num" id="cd-days-val">00</span>
+          <span class="cd-unit" id="cd-days">KUN</span>
+        </div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block">
+          <span class="cd-num" id="cd-hours-val">00</span>
+          <span class="cd-unit" id="cd-hours">SOAT</span>
+        </div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block">
+          <span class="cd-num" id="cd-mins-val">00</span>
+          <span class="cd-unit" id="cd-mins">DAQIQA</span>
+        </div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block">
+          <span class="cd-num" id="cd-secs-val">00</span>
+          <span class="cd-unit" id="cd-secs">SONIYA</span>
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- DETAILS -->
+    <div class="section">
+      <span class="section-label">TAFSILOTLAR</span>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="ic-label">SANA</span>
+          <div class="ic-value">28.06</div>
+          <div class="ic-sub">2026</div>
+        </div>
+
+        <div class="info-card">
+          <span class="ic-label">VAQT</span>
+          <div class="ic-value">20:00</div>
+          <div class="ic-sub">Kechki ziyofat</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CALENDAR -->
+    <div class="calendar-section">
+
+      <!-- COUNTDOWN -->
+      <div class="countdown-section">
+
+        <span class="countdown-label">
+          TO'YGACHA QOLGAN VAQT
+        </span>
+
+        <div class="countdown-grid">
+
+          <div class="cd-block">
+            <span class="cd-num" id="days">00</span>
+            <span class="cd-unit">KUN</span>
+          </div>
+
+          <div class="cd-sep">:</div>
+
+          <div class="cd-block">
+            <span class="cd-num" id="hours">00</span>
+            <span class="cd-unit">SOAT</span>
+          </div>
+
+          <div class="cd-sep">:</div>
+
+          <div class="cd-block">
+            <span class="cd-num" id="minutes">00</span>
+            <span class="cd-unit">DAQIQA</span>
+          </div>
+
+          <div class="cd-sep">:</div>
+
+          <div class="cd-block">
+            <span class="cd-num" id="seconds">00</span>
+            <span class="cd-unit">SONIYA</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="calendar-decoration">✦</div>
+
+      <div id="calendar-title" class="calendar-title"></div>
+
+      <div class="calendar-weekdays">
+        <div>Du</div>
+        <div>Se</div>
+        <div>Ch</div>
+        <div>Pa</div>
+        <div>Ju</div>
+        <div>Sh</div>
+        <div>Ya</div>
+      </div>
+
+      <div id="calendar-grid" class="calendar-grid"></div>
+
+    </div>
+
+
+    <script>
+      const weddingDate = new Date("2026-06-28T19:00:00");
+
+      /* COUNTDOWN */
+
+      function updateCountdown() {
+
+        const now = new Date();
+        const diff = weddingDate - now;
+
+        if (diff <= 0) {
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+        const hours = Math.floor(
+          (diff % (1000 * 60 * 60 * 24))
+          / (1000 * 60 * 60)
+        );
+
+        const minutes = Math.floor(
+          (diff % (1000 * 60 * 60))
+          / (1000 * 60)
+        );
+
+        const seconds = Math.floor(
+          (diff % (1000 * 60))
+          / 1000
+        );
+
+        document.getElementById("days").textContent =
+          String(days).padStart(2, "0");
+
+        document.getElementById("hours").textContent =
+          String(hours).padStart(2, "0");
+
+        document.getElementById("minutes").textContent =
+          String(minutes).padStart(2, "0");
+
+        document.getElementById("seconds").textContent =
+          String(seconds).padStart(2, "0");
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      /* CALENDAR */
+
+      const months = [
+        "YANVAR", "FEVRAL", "MART", "APREL",
+        "MAY", "IYUN", "IYUL", "AVGUST",
+        "SENTYABR", "OKTYABR", "NOYABR", "DEKABR"
+      ];
+
+      function generateCalendar() {
+
+        const year = weddingDate.getFullYear();
+        const month = weddingDate.getMonth();
+        const selectedDay = weddingDate.getDate();
+
+        document.getElementById("calendar-title").innerText =
+          months[month] + " " + year;
+
+        const grid =
+          document.getElementById("calendar-grid");
+
+        grid.innerHTML = "";
+
+        let firstDay =
+          new Date(year, month, 1).getDay();
+
+        firstDay = firstDay === 0 ? 6 : firstDay - 1;
+
+        const daysInMonth =
+          new Date(year, month + 1, 0).getDate();
+
+        for (let i = 0; i < firstDay; i++) {
+          const empty = document.createElement("div");
+          grid.appendChild(empty);
+        }
+
+        for (let day = 1; day <= daysInMonth; day++) {
+
+          const cell = document.createElement("div");
+
+          if (day === selectedDay) {
+            cell.classList.add("marked");
+          }
+
+          cell.textContent = day;
+          grid.appendChild(cell);
+        }
+      }
+
+      generateCalendar();
+    </script>
+
+    <div class="divider-line" style="max-width:180px;margin:0 auto 8px">
+      <div class="divider-diamond"></div>
+    </div>
+
+    <!-- Venue + Maps -->
+    <div class="venue-section">
+      <span class="section-label" id="lbl-venue-label">MANZIL</span>
+      <div class="venue-name" id="venue-name">Billur to'yxonasi</div>
+      <div class="venue-address" id="venue-addr">Xorazm viloyati, Bog'ot tumani</div>
+      <img style="width: 370px; border-top-left-radius: 25px; border-top-right-radius: 25px;" src="toyxana.jpg" alt="">
+
+      <!-- Map buttons -->
+      <div class="map-buttons">
+        <a class="map-btn google" id="google-map-btn" href="https://maps.app.goo.gl/HMcJvdswHJf22xiu8" target="_blank">
+          <i class="ti ti-map-pin"></i>
+          <span id="lbl-google">GOOGLE MAPS</span>
+        </a>
+        <a class="map-btn yandex" id="yandex-map-btn" href="https://maps.app.goo.gl/2taKzjTKQ27J1jEt9" target="_blank">
+          <i class="ti ti-map-2"></i>
+          <span id="lbl-yandex">YANDEX MAPS</span>
+        </a>
+      </div>
+
+      <!-- Embedded maps — flex row -->
+      <div class="map-embeds">
+        <div class="map-embed-wrap">
+          <span class="map-embed-label" id="lbl-map-google">Google Maps</span>
+          <div id="google-embed-wrap"></div>
+        </div>
+        <!-- <div class="map-embed-wrap">
+          <span class="map-embed-label" id="lbl-map-yandex">Yandex Maps</span>
+          <div id="yandex-embed-wrap"></div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-ornament">
+      <div class="footer-bg-text">LOVE</div>
+      <span class="heart2">♡</span>
+      <div class="footer-main-text" id="footer-main">SIZNING ISHTIROKINGIZ</div>
+      <div class="footer-divider"></div>
+      <div class="footer-sub-text" id="footer-sub">Biz uchun eng muhim sovg'a!</div>
+    </div>
+
+  </div><!-- /main-page -->
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
