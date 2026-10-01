@@ -26,6 +26,8 @@ var CONFIG = {
 /* ── TRANSLATIONS ── */
 var texts = {
   uz: {
+    'man-name': 'Akmalbek',
+    'woman-name': 'Farangiz',
     'quran-tr': '«U ularning qalblarini birlashtirdi»',
     'invite-text': 'Aziz mehmonlarimiz,<br>Sizi hayotimizning eng baxtli kuniga —<br><em style="color:var(--gold)">to\'y bazm</em>imizga taklif etamiz.',
     'lbl-details': 'TAFSILOTLAR',
@@ -53,6 +55,8 @@ var texts = {
     'venue-name': "Istambul Toyxonasi",
   },
   ru: {
+    'man-name': 'Акмалбек',
+    'woman-name': 'Фарангиз',
     'quran-tr': '«И Он соединил их сердца»',
     'invite-text': 'Дорогие гости,<br>Мы с радостью приглашаем вас на<br>наш <em style="color:var(--gold)">свадебный вечер</em>.',
     'lbl-details': 'ДЕТАЛИ',
@@ -80,6 +84,8 @@ var texts = {
     'venue-name': "Тойхона Истамбул",
   },
   en: {
+    'man-name': 'Akmalbek',
+    'woman-name': 'Farangiz',
     'quran-tr': '"And He united their hearts"',
     'invite-text': 'Dear guests,<br>We joyfully invite you to celebrate<br>our <em style="color:var(--gold)">wedding evening</em> with us.',
     'lbl-details': 'DETAILS',
