@@ -6,16 +6,16 @@ var CONFIG = {
   weddingDate: new Date(2026, 5, 28, 19, 0, 0),  // 28 June 2026, 19:00
 
   /* Google Maps share link */
-  googleMapsLink: "https://maps.app.goo.gl/HMcJvdswHJf22xiu8",
+  googleMapsLink: "https://maps.app.goo.gl/dPH8D4aBXLFFPVME6",
 
   /* Yandex Maps link — replace with your yandex.uz/maps link */
-  yandexMapsLink: "https://yandex.uz/maps/-/CPh2QWYm",
+  yandexMapsLink: "https://yandex.uz/maps/-/CXU~BL7i",
 
   /* Google Maps embed — get from Google Maps > Share > Embed a map */
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2275.8302856191863!2d60.81991353551902!3d41.360488178242086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dfeb00439696af%3A0x23905311ac3d8b24!2zQklMTFVSINCh0LLQsNC00LXQsdC90YvQuSDQt9Cw0Ls!5e1!3m2!1sen!2s!4v1781178290319!5m2!1sen!2s",
+  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d686.6144482364075!2d60.83303590667374!3d41.351626430321886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dfeb00254a76e1%3A0xb4531f081d34e662!2sIstanbul%20restaurant!5e0!3m2!1sru!2s!4v1790831959904!5m2!1sru!2s",
 
   /* Yandex Maps embed — get from yandex.uz/maps > Share > iframe */
-  // yandexMapsEmbed: "https://yandex.uz/maps/-/CPh2QWYm",
+  yandexMapsEmbed: "https://yandex.uz/map-widget/v1/?ll=60.833048%2C41.351050&z=17&mode=search&text=Istanbul%20restaurant",
 
   /* YouTube video ID — Sevara Nazarkhon "Meni Sev" */
   youtubeVideoId: "8ttozx_uag8"
@@ -31,7 +31,7 @@ var texts = {
     'lbl-details': 'TAFSILOTLAR',
     'lbl-date': 'SANA',
     'lbl-time': 'VAQT',
-    'lbl-evening': 'Kechki ziyofat',
+    'lbl-evening': 'Kechki Paytda',
     'lbl-program': 'DASTUR',
     't1': 'Mehmonlar kutib olinishi',
     't2': 'Nikoh marosimi',
@@ -50,7 +50,7 @@ var texts = {
     'cd-secs': 'SONIYA',
     'footer-main': 'SIZNING ISHTIROKINGIZ',
     'footer-sub': 'Biz uchun eng muhim sovg\'a!',
-    'venue-name': "Billur Toyxonasi",
+    'venue-name': "Istambul Toyxonasi",
   },
   ru: {
     'quran-tr': '«И Он соединил их сердца»',
@@ -77,7 +77,7 @@ var texts = {
     'cd-secs': 'СЕКУНД',
     'footer-main': 'ВАШЕ ПРИСУТСТВИЕ',
     'footer-sub': 'Лучший подарок для нас!',
-    'venue-name': "Тойхона Биллюр",
+    'venue-name': "Тойхона Истамбул",
   },
   en: {
     'quran-tr': '"And He united their hearts"',
@@ -104,7 +104,7 @@ var texts = {
     'cd-secs': 'SECS',
     'footer-main': 'YOUR PRESENCE',
     'footer-sub': 'Is our greatest gift!',
-    'venue-name': "Wedding Hall Billur",
+    'venue-name': "Wedding Hall Istambul",
   }
 };
 
